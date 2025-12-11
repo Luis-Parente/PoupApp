@@ -38,5 +38,10 @@ export class BotaoAdicionarContaComponent {
 
     this.contaCriada.emit(novaConta);
     this.modalAberto.set(false);
+
+    this.novaContaForm = {
+      nome: '',
+      saldoInicial: ''
+    }
   }
 }

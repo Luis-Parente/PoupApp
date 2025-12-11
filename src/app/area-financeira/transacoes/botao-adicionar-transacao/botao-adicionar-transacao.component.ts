@@ -50,5 +50,13 @@ export class BotaoAdicionarTransacaoComponent {
 
     this.transacaoCriada.emit(novaTransacao);
     this.modalAberto.set(false);
+
+    this.novaTransacaoForm = {
+      nome: '',
+      tipo: '',
+      valor: '',
+      data: '',
+      conta: ''
+    }
   }
 }
