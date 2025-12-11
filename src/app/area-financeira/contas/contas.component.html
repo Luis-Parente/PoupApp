@@ -8,7 +8,7 @@
       <ul>
         @for (conta of contas(); track conta.nome) {
           <li class="item-entre-divisorias">
-            <app-conta [conta]="conta" />
+            <app-conta [conta]="conta"/>
           </li>
         } @empty {
           <li aria-hidden="true">
@@ -16,8 +16,11 @@
           </li>
         }
       </ul>
-  
-      <app-botao class="botao-adicionar-conta" texto="Adicionar conta" />
+
+      <app-botao class="botao-adicionar-conta">
+        <img src="icones/carteira.svg" alt="" class="icone-carteira">
+        Adicionar conta
+      </app-botao>
     </div>
   </div>
 </section>
