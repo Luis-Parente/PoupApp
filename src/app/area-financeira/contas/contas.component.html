@@ -1,9 +1,9 @@
-<section class="contas-card">
-  <div class="titulo-wrapper">
+<app-card>
+  <div card-titulo class="titulo-wrapper">
     <h2 class="texto-lg">Minhas contas</h2>
   </div>
 
-  <div class="corpo-card">
+  <div card-corpo class="corpo-card">
     <div class="contas-e-botao">
       <ul>
         @for (conta of contas(); track conta.nome) {
@@ -23,4 +23,4 @@
       </app-botao>
     </div>
   </div>
-</section>
+</app-card>
