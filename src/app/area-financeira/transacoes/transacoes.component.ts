@@ -3,6 +3,7 @@ import {TransacaoComponent} from "./transacao/transacao.component";
 import {Transacao} from '../compartilhados/transacao.model';
 import {CardComponent} from '../compartilhados/card/card.component';
 import {BotaoAdicionarTransacaoComponent} from './botao-adicionar-transacao/botao-adicionar-transacao.component';
+import {Conta} from '../compartilhados/conta.model';
 
 @Component({
   selector: 'app-transacoes',
@@ -12,6 +13,8 @@ import {BotaoAdicionarTransacaoComponent} from './botao-adicionar-transacao/bota
 })
 export class TransacoesComponent {
   transacoes = input.required<Transacao[]>();
+
+  contas = input.required<Conta[]>()
 
   transacaoCriada = output<Transacao>();
 }
